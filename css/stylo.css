@@ -74,12 +74,14 @@ figure img{
     display: flex;
     height: 400pxx;
     border: 2px solid wheat;
-    background-size: cover;
-    background-position-y: center;
-    background-repeat: no-repeat; 
-    margin-bottom: 30px;
-    padding: 10px 
+    align-items: center;
 }/* usado dentro del div de cada personaje o enemigo*/
+
+.habilidad{
+    display: flex;
+    font-size: 16px;
+
+}
 
 .contenedor-personaje img{
     display: block;
