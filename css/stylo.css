@@ -107,9 +107,8 @@ li{
 li div img{
     display: block;
     max-width: 200px;
-    padding: 10px 5px 5px 10px;
     border: 2px solid wheat;  
-}
+} /*agregar un div como contenedor de la imagen y darle tamaño*/
 li div p{
     font-size: 18px;
     line-height: 25px;
@@ -217,4 +216,30 @@ strong{
 iframe{
     aspect-ratio: 2/1;
     border: 3px double rgb(189, 11, 11);
+}
+.botonform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(15, 14, 14);
+    border-radius: 25%;
+    bottom: 50%;
+    right: 2%;
+    z-index: 1;
+    font-family: 'Germania One', cursive;
+}
+.botonform>a{
+    color: red;
+    border: 2px solid wheat;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.botonform>img{
+width: 100%;
 }
