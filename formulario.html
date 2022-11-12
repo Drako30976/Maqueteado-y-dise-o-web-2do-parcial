@@ -22,14 +22,122 @@
             <a class="link" href="personajes.html">Personajes</a>
             <a class="link" href="enemigos.html">Enemigos</a>
             <a class="link" href="comics.html">Novelas/Comics</a>
+            <a class="link" href="secretos.html">Secretos en el juego</a>
         </nav>
     </div>
     <div>
         <main>                
-            <section class="contenedores" id="intro">
+            <section class="contenedores">
+                <div class="formulario">
+                    <form action="form_reg" method="post">
+                        <fieldset>
+                        <legend>Datos del Nephalem</legend>  
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Direccion de e-Mail">
+                            <label for="nacimiento">Fecha de nacimiento:</label>
+                            <input type="date" name="nacimiento" id="nacimiento" min="2004-01-01" value="aaaa-mm-dd">                            
+                        </fieldset>
+                        <fieldset>
+                            <legend>Datos de la cuenta</legend>
+                            <label for="username">Nombre de la cuenta:</label>
+                            <input type="text" name="username" id="username" placeholder="Ingrese el nombre de su cuenta">
+                            <label for="pass">Contraseña:</label>
+                            <input type="password" name="pass" id="pass" placeholder="Ingrese la contraseña">
+                            <label for="pass2">Contraseña:</label>
+                            <input type="password" name="pass2" id="pass2" placeholder="Repita la contraseña">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Cuentanos de tus gustos</legend>
+                                <div class="form_titulo">¿Cual es tu version del juego favorita?</div>    
+                                <div class="juegos">
+                                    <div>
+                                        <input type="radio" id="d1" name="juego_mejor" value="hellfire">
+                                        <label for="d1">Diablo HellFire</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="d2" name="juego_mejor" value="lod" checked>
+                                        <label for="d2">Diablo 2 LOD</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="d3" name="juego_mejor" value="ros">
+                                        <label for="d3">Diablo 3 ROS</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="di" name="juego_mejor" value="immortal">
+                                        <label for="di">Diablo Immortal</label>
+                                    </div>
+                                </div>
+                                <div class="form_titulo">¿Cuales son tus clases favoritas?</div>
+                                <div class="">
+                                    <div>
+                                        <input type="checkbox" id="barbaro" name="personajes[]" value="barbaro" >
+                                        <label for="barbaro">Barbaro</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="amazona" name="personajes[]" value="amazona" >
+                                        <label for="amazona">Amazona</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="nigromante1" name="personajes[]" value="nigromante1" >
+                                        <label for="nigromante1">Nigromante(D2)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="paladin" name="personajes[]" value="paladin" >
+                                        <label for="paladin">Paladin</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="hechicera" name="personajes[]" value="hechicera" >
+                                        <label for="hechicera">Hechicera</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="asesina" name="personajes[]" value="asesina" >
+                                        <label for="asesina">Asesina</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="druida" name="personajes[]" value="druida" >
+                                        <label for="druida">Druida</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="demonh" name="personajes[]" value="demonh" >
+                                        <label for="demonh">Cazador de Demonios</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="cruzado" name="personajes[]" value="cruzado" >
+                                        <label for="cruzado">Cruzado</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="mago" name="personajes[]" value="mago" >
+                                        <label for="mago">Mago</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="medicob" name="personajes[]" value="medicob" >
+                                        <label for="medicob">Medico Brujo</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="monje" name="personajes[]" value="monje" >
+                                        <label for="monje">Monje</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="nigromante2" name="personajes[]" value="Wolvernigromante2ine" >
+                                        <label for="nigromante2">Nigromante (D3)</label>
+                                    </div>
+                                </div>
+                                <label for="espectativas">¿Qué especativas tienes sobre Diablo IV y que te gustaria cambiar o incluir?</label>
+                                <textarea id="espectativas" name="espectativas" placeholder="Danos tu opinion"></textarea>
+                        </fieldset>
+                        <input type="submit" value="Registrar">
+                        <input type="reset" value="Reestablecer">
+                        <input type="hidden" name="Muuu!" id="Muuu!" value="muuu?">
+                        <img src="img/muuu.webp" alt="muuu muuu" class="muuu">
+                    </form>
+                </div>
             </section>   
-            </main>
-            </div>
+        </main>
+    </div>
     <footer>
         <div class="perfil_log">
             <img src="img/foto_perfil.jpg" alt="">

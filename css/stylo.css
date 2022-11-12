@@ -38,14 +38,33 @@ nav{
 
 /* --------------------------------------index--------------------------------------------------- */
 
-.imagen{
+.imagen,.imagen2,.imagen3,.imagen4,.imagen5,.imagen6,.imagen7{
     height: 300px;
     border: 2px solid wheat;
     background-image: url(../img/tristan_intro.jpg);
     background-size: cover;
     background-position-y: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
+.imagen2{
+    background-image: url(../img/diabloiv/baner-lanzamiento.jpg); 
+}
+.imagen3{
+    background-image: url(../img/diabloiv/baner-argumento.webp); 
+}
+.imagen4{
+    background-image: url(../img/diabloiv/baner-novedades.webp); 
+}
+.imagen5{
+    background-image: url(../img/diabloiv/baner-personajes.webp);  
+}
+.imagen6{
+    background-image: url(../img/diabloiv/baner-combate.webp);  
+}
+.imagen7{
+    background-image: url(../img/diabloiv/baner-trailers.jpg);  
+}
+
 .contenedores{
     font-size: 18px;
     line-height: 30px;
@@ -99,17 +118,17 @@ ul{
     padding: 0px 5px 0px 5px;
     list-style: none;
 }
-li{
+.comic{
     list-style: none;
     border: 2px solid wheat;  
     margin: 15px 0px;
 }
-li div img{
+.comic div img{
     display: block;
     max-width: 200px;
     border: 2px solid wheat;  
 } /*agregar un div como contenedor de la imagen y darle tamaño*/
-li div p{
+.comic div p{
     font-size: 18px;
     line-height: 25px;
     padding:20px 10px;
@@ -162,7 +181,6 @@ footer{
     overflow: hidden;
     margin-right: 30px;
     border: 3px double wheat;
-    overflow: hidden;
 }
 .perfil_log img:hover{
     transform: scale(1.1);
@@ -226,7 +244,7 @@ iframe{
     text-align: center;
     width: 150px;
     height: 150px;
-    background-color: rgb(15, 14, 14);
+    background-color: rgb(13 3 1);
     border-radius: 25%;
     bottom: 50%;
     right: 2%;
@@ -242,4 +260,18 @@ iframe{
 }
 .botonform>img{
 width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+}
+.juegos{
+    display: flex;
+}
+.muuu{
+    display:block;
+    display: none; /*borrame y encuentra el secreto 😁*/
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    transform: scaleX(-1);
 }
