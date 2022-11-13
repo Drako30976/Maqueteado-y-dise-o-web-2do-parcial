@@ -1,4 +1,3 @@
-/* ----------------------------------------- Body, nav y h1--------------------------------- */
 body {
     margin: 0;
     padding: 0;
@@ -35,9 +34,6 @@ nav{
     border-radius: 5px;
     background-color: rgb(158, 29, 29);
 }
-
-/* --------------------------------------index--------------------------------------------------- */
-
 .imagen,.imagen2,.imagen3,.imagen4,.imagen5,.imagen6,.imagen7{
     height: 300px;
     border: 2px solid wheat;
@@ -64,7 +60,6 @@ nav{
 .imagen7{
     background-image: url(../img/diabloiv/baner-trailers.jpg);  
 }
-
 .contenedores{
     font-size: 18px;
     line-height: 30px;
@@ -89,87 +84,38 @@ figure img{
     float: right;
     margin: 5px 0px 10px 20px
 }
-.contenedor-personaje{
+.titulos{
     display: flex;
-    height: 400pxx;
-    border: 2px solid wheat;
     align-items: center;
-    padding: 0 15px 0 15px;
-}/* usado dentro del div de cada personaje o enemigo*/
-
-.habilidad{
-    display: flex;
-    font-size: 16px;
-
-}
-
-.contenedor-personaje img{
-    display: block;
-    border: 2px solid wheat;  
-    max-width: 300px;
-    margin:15px 15px 10px 8px ;
-}
-
-/*-----------------------------------------------comics------------------------------------------*/
-.content{
-    display: flex;
-}
-ul{
-    padding: 0px 5px 0px 5px;
-    list-style: none;
-}
-.comic{
-    list-style: none;
-    border: 2px solid wheat;  
-    margin: 15px 0px;
-}
-.comic div img{
-    display: block;
-    max-width: 200px;
-    border: 2px solid wheat;  
-} /*agregar un div como contenedor de la imagen y darle tamaño*/
-.comic div p{
-    font-size: 18px;
-    line-height: 25px;
-    padding:20px 10px;
-    margin: 0px;
-    max-width: 800px;
-    border: 2px solid wheat; 
-}
-.title{
-    display: flex;
-    background-color: rgba(75, 74, 74, 0.616);
     justify-content: center;
-    }
+} /* usado para el contenedor de los h2*/
 h2{
     font-family: 'Germania One', cursive;
     text-align: center;
     font-size: 35px;
     padding: 0px;
+    text-shadow: 5px 5px 10px black;
 }
 h3{
     font-family: 'Germania One', cursive;
     text-align: center;
     font-size: 30px;
     padding: 0px;
+    text-shadow: 5px 5px 10px black;
 }
 h4{
     font-family: 'Germania One', cursive;
     text-align: start;
     font-size: 25px;
     padding-left: 15px; 
+    text-shadow: 5px 5px 10px black;
 }
-.titulos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} /* usado para el contenedor de los h2*/
-/*------------------------------------------FOOTER-----------------------------*/
+/* ---------------------------footer-------------------------------- */
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 8px double wheat;
+    border: 3px double wheat;
     padding: 10px 20px;
     max-width: 1000px;
     margin: 0px auto;
@@ -225,17 +171,7 @@ strong{
     font-size: 20px;
     color: rgb(243, 95, 50);
 }
-/* ----------------------------------Multimedia---------------------------------------- */
-.video{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-iframe{
-    aspect-ratio: 2/1;
-    border: 3px double rgb(189, 11, 11);
-}
-/* -----------------------------boton-form------------------------------- */
+/* --------------------------------butom-form---------------------------- */
 .botonform{
     display: flex;
     align-items: center;
@@ -267,18 +203,14 @@ iframe{
 width: 100%;
 border-radius: 20px;
 }
-/* ----------------------------form----------------------------------- */
-textarea{
-    width: 100%;
-    height: 200px;
-}
-.juegos{
+/* ----------------------------------------------particulares--------------------------- */
+.video{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
 }
-.muuu{
-    display:block;
-    display: none; /*borrame y encuentra el secreto 😁*/
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0);
-    transform: scaleX(-1);
+.video>iframe{
+    width: 560px;
+    height: 320px;
 }
