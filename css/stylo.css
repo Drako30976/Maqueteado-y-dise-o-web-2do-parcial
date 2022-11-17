@@ -127,7 +127,7 @@ ul{
     display: block;
     max-width: 200px;
     border: 2px solid wheat;  
-} /*agregar un div como contenedor de la imagen y darle tamaño*/
+} 
 .comic div p{
     font-size: 18px;
     line-height: 25px;
@@ -163,7 +163,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-} /* usado para el contenedor de los h2*/
+} 
 /*------------------------------------------FOOTER-----------------------------*/
 footer{
     display: flex;
@@ -212,17 +212,7 @@ body>div>nav a:hover{
     color: black;
     transform:scale(1.2);
 }
-abbr{
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(243, 95, 50);
-}
-em{
-    font-size: 20px;
-    color: rgb(243, 95, 50);
-}
-strong{
-    font-size: 20px;
+abbr,em,strong{
     color: rgb(243, 95, 50);
 }
 /* ----------------------------------Multimedia---------------------------------------- */

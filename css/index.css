@@ -158,19 +158,10 @@ body>div>nav a:hover{
     color: black;
     transform:scale(1.2);
 }
-abbr{
-    text-decoration: none;
-    font-size: 20px;
+abbr,em,strong{
     color: rgb(243, 95, 50);
 }
-em{
-    font-size: 20px;
-    color: rgb(243, 95, 50);
-}
-strong{
-    font-size: 20px;
-    color: rgb(243, 95, 50);
-}
+
 /* --------------------------------butom-form---------------------------- */
 .botonform{
     display: flex;
