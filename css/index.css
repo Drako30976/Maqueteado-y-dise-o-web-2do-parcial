@@ -156,6 +156,9 @@ footer{
 a:hover{
     transform:rotate(0) scale(1.2);
 }
+a:visited{
+    color: black;
+}
 
 body>div>nav a:visited{
     color: whitesmoke;
@@ -210,4 +213,31 @@ border-radius: 20px;
 .video>iframe{
     width: 560px;
     height: 320px;
+}
+.volver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background:linear-gradient(127deg,rgba(17, 11, 11, 0.829),rgb(160, 8, 8),rgba(196, 7, 7, 0.829));
+    border-radius: 50%;
+    border: 5px solid rgb(189, 21, 21);
+    bottom: 5%;
+    right: 2%;
+    z-index: 1;
+    font-family: 'Germania One', cursive;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.volver a{
+    text-decoration: none;
+}
+.volver a:visited{
+    color: rgb(236, 233, 233);
+}
+li{
+    margin: 15px 5px;
 }
