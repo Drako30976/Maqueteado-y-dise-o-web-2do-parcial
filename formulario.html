@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylo.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
@@ -28,51 +28,50 @@
     <div>
         <main>                
             <section class="contenedores">
+                <div>
+                    <video src="img/multimedia.webm" type="video/mp4" autoplay loop>
+                        <h2>Registrate</h2>
+                    </video>
+                    <h2>Registrate</h2>
+                </div>
                 <div class="formulario">
                     <form action="form_reg" method="post">
                         <fieldset>
                         <legend>Datos del Nephalem</legend>  
+                        <div>
                             <label for="nombre">Nombre:</label>
                             <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                            <br>
                             <label for="apellido">Apellido:</label>
                             <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+                        </div>
+                        <div>
                             <label for="email">E-Mail:</label>
                             <input type="email" name="email" id="email" placeholder="Direccion de e-Mail">
+                            <br>
                             <label for="nacimiento">Fecha de nacimiento:</label>
-                            <input type="date" name="nacimiento" id="nacimiento" min="2004-01-01" value="aaaa-mm-dd">                            
+                            <input type="date" name="nacimiento" id="nacimiento" min="2004-01-01" value="aaaa-mm-dd"> 
+                        </div>
                         </fieldset>
                         <fieldset>
                             <legend>Datos de la cuenta</legend>
-                            <label for="username">Nombre de la cuenta:</label>
-                            <input type="text" name="username" id="username" placeholder="Ingrese el nombre de su cuenta">
-                            <label for="pass">Contraseña:</label>
-                            <input type="password" name="pass" id="pass" placeholder="Ingrese la contraseña">
-                            <label for="pass2">Contraseña:</label>
-                            <input type="password" name="pass2" id="pass2" placeholder="Repita la contraseña">
+                            <div>
+                                <label for="username">Nombre de la cuenta:</label>
+                                <input type="text" name="username" id="username" placeholder="Ingrese el nombre de su cuenta">
+                            </div>
+                            <div>
+                                <label for="pass">Contraseña:</label>
+                                <input type="password" name="pass" id="pass" placeholder="Ingrese la contraseña">
+                            </div>
+                            <div>
+                                <label for="pass2">Contraseña:</label>
+                                <input type="password" name="pass2" id="pass2" placeholder="Repita la contraseña">
+                            </div>
                         </fieldset>
                         <fieldset>
                             <legend>Cuentanos de tus gustos</legend>
-                                <div class="form_titulo">¿Cual es tu version del juego favorita?</div>    
-                                <div class="juegos">
-                                    <div>
-                                        <input type="radio" id="d1" name="juego_mejor" value="hellfire">
-                                        <label for="d1">Diablo HellFire</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="d2" name="juego_mejor" value="lod" checked>
-                                        <label for="d2">Diablo 2 LOD</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="d3" name="juego_mejor" value="ros">
-                                        <label for="d3">Diablo 3 ROS</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="di" name="juego_mejor" value="immortal">
-                                        <label for="di">Diablo Immortal</label>
-                                    </div>
-                                </div>
-                                <div class="form_titulo">¿Cuales son tus clases favoritas?</div>
-                                <div class="">
+                                <div>
+                                    <div class="form_titulo">¿Cuales son tus clases favoritas?</div>
                                     <div>
                                         <input type="checkbox" id="barbaro" name="personajes[]" value="barbaro" >
                                         <label for="barbaro">Barbaro</label>
@@ -125,10 +124,32 @@
                                         <input type="checkbox" id="nigromante2" name="personajes[]" value="Wolvernigromante2ine" >
                                         <label for="nigromante2">Nigromante (D3)</label>
                                     </div>
+                                    
                                 </div>
-                                <label for="espectativas">¿Qué especativas tienes sobre Diablo IV y que te gustaria cambiar o incluir?</label>
-                                <textarea id="espectativas" name="espectativas" placeholder="Danos tu opinion"></textarea>
+                                  
+                                <div>
+                                    <div class="form_titulo">¿Cual es tu version del juego favorita?</div>  
+                                    <div>
+                                        <input type="radio" id="d1" name="juego_mejor" value="hellfire">
+                                        <label for="d1">Diablo HellFire <img src="img/char/D1/Sin título-1.webp" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="d2" name="juego_mejor" value="lod" checked>
+                                        <label for="d2">Diablo 2 LOD <img src="img/char/D2/d2icon.png" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="d3" name="juego_mejor" value="ros">
+                                        <label for="d3">Diablo 3 ROS <img src="img/char//D3/d3icon.ico" alt=""></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="di" name="juego_mejor" value="immortal">
+                                        <label for="di">Diablo Immortal <img src="img/enemigos/DInmortal/Diablo-Immortal-icon.png" alt=""></label>
+                                    </div>
+                                </div>
                         </fieldset>
+                        <br>
+                            <label for="espectativas">¿Qué especativas tienes sobre Diablo IV y que te gustaria cambiar o incluir?</label>
+                            <textarea id="espectativas" name="espectativas" placeholder="Danos tu opinion"></textarea>
                         <input type="submit" value="Registrar">
                         <input type="reset" value="Reestablecer">
                         <input type="hidden" name="Muuu!" id="Muuu!" value="muuu?">

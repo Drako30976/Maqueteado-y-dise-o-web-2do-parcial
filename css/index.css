@@ -92,23 +92,29 @@ figure img{
 h2{
     font-family: 'Germania One', cursive;
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     padding: 0px;
     text-shadow: 5px 5px 10px black;
 }
 h3{
     font-family: 'Germania One', cursive;
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     padding: 0px;
     text-shadow: 5px 5px 10px black;
 }
 h4{
     font-family: 'Germania One', cursive;
+    text-align: center;
+    font-size: 35px;
+    padding-left: 15px; 
+    text-shadow: 5px 5px 10px black;
+}
+h5{
+    font-family: 'Germania One', cursive;
     text-align: start;
     font-size: 25px;
     padding-left: 15px; 
-    text-shadow: 5px 5px 10px black;
 }
 /* ---------------------------footer-------------------------------- */
 footer{

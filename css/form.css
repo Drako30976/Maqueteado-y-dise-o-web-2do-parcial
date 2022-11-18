@@ -40,23 +40,6 @@ nav{
     padding: 10px;
     border: 8px double wheat;
     margin-bottom: 15px;
-} /*usados en los contenedores de cada section*/
-
-.contenedor{
-    display: inline-block;
-    border: 2px solid wheat;
-    background-size: cover;
-    background-position-y: center;
-    background-repeat: no-repeat; 
-    margin-bottom: 30px;
-    padding: 15px;
-} /* usado dentro de los primeros div de cada seccion*/
-figure img{
-    display: block;
-    border: 2px solid wheat;    
-    width: 50%;
-    float: right;
-    margin: 5px 0px 10px 20px
 }
 footer{
     display: flex;
@@ -114,32 +97,21 @@ h2{
     font-size: 50px;
     padding: 0px;
     text-shadow: 5px 5px 10px black;
+    position: absolute;
+    top: 100px;
+    right: 375px;
 }
-h3{
-    font-family: 'Germania One', cursive;
-    text-align: center;
-    font-size: 45px;
-    padding: 0px;
-    text-shadow: 5px 5px 10px black;
-}
-h4{
-    font-family: 'Germania One', cursive;
-    text-align: center;
-    font-size: 35px;
-    padding-left: 15px; 
-    text-shadow: 5px 5px 10px black;
-}
-h5{
-    font-family: 'Germania One', cursive;
-    text-align: start;
-    font-size: 25px;
-    padding-left: 15px; 
-}
-.titulos{
+/* ----------------------------------Multimedia---------------------------------------- */
+.video{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-} 
+}
+iframe{
+    aspect-ratio: 2/1;
+    border: 3px double rgb(189, 11, 11);
+}
+/* -----------------------------boton-form------------------------------- */
 .botonform{
     display: flex;
     align-items: center;
@@ -171,86 +143,75 @@ h5{
 width: 100%;
 border-radius: 20px;
 }
-.imagen{
-    height: 300px;
-    border: 2px solid wheat;
-    background-color: black;
-    background-size:contain;
-    background-position-y: center;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-image: url(../img/test/baner.jpg);
+.muuu{
+    display:block;
+    display: none; /*borrame y encuentra el secreto 😁*/
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    transform: scaleX(-1);
 }
-.imagen2,.imagen3{
-    height: 300px;
-    border: 2px solid wheat;
-    background-color: black;
-    background-size:cover;
-    background-position-y: center;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-image: url(../img/test/pandemonium.jpg); 
-}
-.imagen3{
-    background-image: url(../img/test/chupiportada.jpg); 
-}
-.vacamu,.vacamu2{
-    background-image: url(../img/test/Vaca.webp);
+textarea{
     width: 100%;
-    height: 150px;
-    background-size:contain;
-    background-repeat:round;
-}
-.vacamu2{
-    background-image: url(../img/test/vaquita.gif);
-}
-.llaves{
-    display: flex;
-}
-.llaves>div{
-    width: 33%;
-    border: 2px solid wheat;
-    background-color: rgba(128, 128, 128, 0.178);
-}
-.llaves img{
-    display: block;
+    height: 200px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(202, 198, 198, 0.171);
     margin: auto;
+    color: whitesmoke;
 }
-.llaves p{
-    padding: 10px 20px 10px;
-    word-spacing: 3px;
-    font-style: italic;
-
+video{
+    width: 100%;
 }
-.lista{
-    list-style: square;
-    font-style: italic;
-    font-weight: bold;
-    color: orangered;
+section>div{
+    position: relative;
 }
-.listad3{
-    padding: 0;
-    list-style: none;
+form{
+    font-family: 'Germania One', cursive;
+    display: block;
 }
-.listad3 li{
+fieldset{
     display: flex;
+    text-align: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 25px 10px 25px 10px;
-    border: 3px double wheat;
 }
-.listad3 div{
-    height: 100%;
-    width: 40%;
-    border-right: 2px solid wheat;
+fieldset>div{
+    width: 50%;
 }
-.listad3 p{
-    padding: 0px 15px;
-    width: 60%;
-    height: 100%;
-    font-size: 0.9rem;
-}
-.listad3 img{
-    max-width: 100% ;
-    height: 100%;
+label{
+    font-size: 1.4rem;
+    text-shadow: 5px 5px 10px black;
 
+}
+label>img{
+    width: 50px;
+    height: 50px;
+}
+#nombre,#apellido,#email,#nacimiento{
+    width: 90%;
+}
+#username,#pass,#pass2{
+    width: 30%;
+}
+fieldset:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: flex-start;
+}
+.form_titulo{
+    font-size: 1.6rem;
+}
+fieldset>div>div{
+    margin: 10px 5px 10px 5px;
+}
+legend{
+    color: rgba(161, 22, 22, 0.781);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+input{
+    margin: 5px 15px 5px 10px;
+    border: 3px solid rgba(102, 187, 226, 0.534);
+    border-radius: 5px;
 }
