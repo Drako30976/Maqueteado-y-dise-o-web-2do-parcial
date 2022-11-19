@@ -156,9 +156,6 @@ footer{
 a:hover{
     transform:rotate(0) scale(1.2);
 }
-a:visited{
-    color: black;
-}
 
 body>div>nav a:visited{
     color: whitesmoke;
@@ -234,10 +231,16 @@ border-radius: 20px;
 }
 .volver a{
     text-decoration: none;
+    color: rgb(236, 233, 233);
 }
 .volver a:visited{
     color: rgb(236, 233, 233);
 }
 li{
     margin: 15px 5px;
+}
+.select{
+    background-color: rgb(172, 61, 9);
+    border: 3px solid rgba(233, 105, 31, 0.644) ;
+    font-weight: bold;
 }
